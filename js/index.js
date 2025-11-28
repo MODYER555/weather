@@ -21,7 +21,7 @@ console.log(tembMoon);
 
 async function weather(y) {
   let respond = await fetch(
-    `http://api.weatherapi.com/v1/forecast.json?key=cab3527d7d404091986144719252711&q=${y}&days=3`
+    `https://api.weatherapi.com/v1/forecast.json?key=cab3527d7d404091986144719252711&q=${y}&days=3`
   );
   if (respond.ok) {
     let data = await respond.json();
